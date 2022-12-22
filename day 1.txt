@@ -1,0 +1,53 @@
+1.Difference between HTTP1.1 vs HTTP2?
+
+HTTP 1.1
+	In HTTP 1.1 the resources will be load one after they can't load multiple resources at the same time,
+ it will block the resource
+HTTP 2
+	In HTTP 2 the resources can be load as the multiple task or multiple tabs/windows at the same time.
+
+2.OBJECTS AND ITS INTERNAL REPRESENTATION IN JAVASCRIPT?
+	Objects in javascript may be defined as the unordered collection of related data of primitive in the form of key:values. 
+These keys can be variables or function and are called properties and methods
+
+3. codekata practice
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+var firstline = userInput[0];
+var secondline = userInput[1];
+var thirdline = userInput[2];
+
+console.log(firstline);
+console.log(secondline);
+console.log(thirdline);
+  
+
+  //end-here
+});
+
+INPUT:
+
+2 5
+2 5 6
+2 4 5
+
+OUTPUT:
+
+2 5
+2 5 6
+2 4 5
